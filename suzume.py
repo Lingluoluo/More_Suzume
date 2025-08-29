@@ -7,17 +7,17 @@ from PIL import Image, ImageDraw, ImageSequence
 from tqdm import tqdm
 
 # ================= 配置 =================
-FOLDER = "images"
-CANVAS_SIZE = (4000, 2500)
-IMAGE_COUNT = 700
-MIN_SIZE, MAX_SIZE = 250, 400
-MAX_OVERLAP_IOU = 0.4
-MAX_ATTEMPTS = 150
-ROTATION_RANGE = (-30, 30)
-ANCHOR_DENSITY_FACTOR = 0.009
-HEAD_RATIO = 0.45
+FOLDER = "images"                    # 图片文件夹
+CANVAS_SIZE = (4000, 2500)           # 画布大小
+IMAGE_COUNT = 700                    # 总图片数量
+MIN_SIZE, MAX_SIZE = 250, 400        # 最小和最大尺寸
+MAX_OVERLAP_IOU = 0.4                # 最大重叠IOU
+MAX_ATTEMPTS = 150                   # 最大尝试次数
+ROTATION_RANGE = (-30, 30)           # 旋转范围
+ANCHOR_DENSITY_FACTOR = 0.009        # 锚点密度因子
+HEAD_RATIO = 0.45                    # 头部比例
 
-DEBUG_MODE = True
+DEBUG_MODE = True                     # 调试模式
 VISUALIZE_ANCHORS = True if DEBUG_MODE else False
 
 #种子
